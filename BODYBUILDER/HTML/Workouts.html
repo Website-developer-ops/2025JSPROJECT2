@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Gym Workout Planner</title>
+  <link rel="stylesheet" href="../CSS/Workout.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Elite Gym - Personalized Workout Planner</h1>
+    <form id="workout-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" required />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="">--Choose--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="mass">Mass (kg):</label>
+      <input type="number" id="mass" required />
+
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" required />
+
+      <label for="goal">Fitness Goal:</label>
+      <select id="goal" required>
+        <option value="">--Choose--</option>
+        <option value="fat-loss">Fat Loss</option>
+        <option value="muscle-gain">Muscle Gain</option>
+        <option value="strength">Strength Training</option>
+        <option value="general-fitness">General Fitness</option>
+      </select>
+
+      <label for="experience">Training Experience:</label>
+      <select id="experience" required>
+        <option value="">--Choose--</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+        <label for="muscle">Target Muscle Groups:</label>
+        <select id="muscle" multiple required>
+            <option value="upper-body">Upper Body Focus</option>
+            <option value="lower-body">Lower Body Focus</option>
+            <option value="full-body">Full Body Focus</option>
+            <option value="chest">Chest</option>
+            <option value="back">Back</option>
+            <option value="legs">Legs</option>
+            <option value="shoulders">Shoulders</option>
+            <option value="arms">Arms</option>
+            <option value="core">Core</option>
+        </select>
+
+
+      <label for="equipment">Available Equipment:</label>
+      <select id="equipment" required>
+        <option value="">--Choose--</option>
+        <option value="bodyweight">Bodyweight</option>
+        <option value="dumbbells">Dumbbells</option>
+        <option value="barbell">Barbell</option>
+        <option value="machines">Gym Machines</option>
+        <option value="full-gym">Full Gym Access</option>
+      </select>
+
+
+
+      <label for="days">Days Available per Week:</label>
+      <input type="number" id="days" min="1" max="7" required />
+
+      <button type="submit">Generate My Program</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
+  <script src="../JAVASCRIPT/Workout.js"></script>
+</body>
+</html>
+

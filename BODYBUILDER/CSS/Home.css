@@ -1,0 +1,53 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blue;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+li{
+    list-style: decimal;
+    margin-top: 0;
+
+}
+a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+div,ul{
+    display: flex;
+    flex-direction: column;
+}
+h{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    margin-top: 0;
+}
+p,li{
+    font-size: 80%;
+    font-weight: normal;
+}
+ul{
+    list-style: decimal;
+}
+bold{
+    font-weight: bold;
+}
