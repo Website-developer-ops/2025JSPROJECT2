@@ -59,3 +59,17 @@ footer {
     font-size: 0.9rem;
 }
 
+#images{
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    gap: 20px;
+    margin-left: -10%;
+  }
+
+#images img{
+    object-fit: cover;
+    object-position: top;
+    width: 50%;
+    height: 100%;
+  }
