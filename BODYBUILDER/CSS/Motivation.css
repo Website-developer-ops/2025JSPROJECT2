@@ -68,7 +68,7 @@ footer {
   }
 
 #images img{
-    object-fit: cover;
+    object-fit: contain;
     object-position: top;
     width: 50%;
     height: 100%;
